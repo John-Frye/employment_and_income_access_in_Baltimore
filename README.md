@@ -32,10 +32,13 @@ Each of Baltimore's neighborhoods can be categorized in the following data clust
 
 ![alt_text](https://github.com/John-Frye/employment_and_income_access_in_Baltimore/blob/main/clusters_and_anchors.png)
 
-- Cluster 1: this cluster contains neighborhoods characterized by low average household income, low rates of employment, low job density, and a high fraction of short commutes. As noted in the chart above, the z score of this cluster's income, employment, and job density was negative, while its fraction of short work commutes was positive. Hence, its income, employment, and job density was lower than the mean, while its work commute times were higher than the mean. This cluster represents about 31% of all Baltimore neighborhoods included in this project.
-- Cluster 2: this cluster features neighborhoods with low income, high employment rates, low job density, and a low fraction of short work commutes. It represents around 48% of all Baltimore neighborhoods included in this project. 
-- Cluster 3: this cluster has neighbors with high income, high employment rates, low job density, and a high fraction of short commutes. It represents around 19% percent of all Baltimore neighborhoods.
-- Cluster 4: this cluster is characterized by high income, high employment rates, high job density, and a high fraction of short commutes. It represents around 2% percent of all Baltimore neighborhoods.
+_- Cluster 1:_ this cluster contains neighborhoods characterized by low average household income, low rates of employment, low job density, and a high fraction of short commutes. As noted in the chart above, the z score of this cluster's income, employment, and job density was negative, while its fraction of short work commutes was positive. Hence, its income, employment, and job density was lower than the mean, while its work commute times were higher than the mean. This cluster represents about 31% of all Baltimore neighborhoods included in this project.
+
+_- Cluster 2:_ this cluster features neighborhoods with low income, high employment rates, low job density, and a low fraction of short work commutes. It represents around 48% of all Baltimore neighborhoods included in this project. 
+
+_- Cluster 3:_ this cluster has neighbors with high income, high employment rates, low job density, and a high fraction of short commutes. It represents around 19% percent of all Baltimore neighborhoods.
+
+_- Cluster 4:_ this cluster is characterized by high income, high employment rates, high job density, and a high fraction of short commutes. It represents around 2% percent of all Baltimore neighborhoods.
 ### Visual Analysis of Clustering
 The following series of graphs illustrates how different neighborhoods are clustered based on the variables: 
 
