@@ -43,4 +43,4 @@ Policy makers should increase investment in neighborhoods that fall within clust
 ## Additional Data
 As noted above, there needs to be more research done on whether or not long commute times have a  negative impact on lower income workers versus higher income workers. For example, I would like to see if workers who rely on public transportation for longer distances face wage penalties due to increased absence, tardiness, higher turnover, or lower work productivity. I would also like to research car ownership among Baltimore's higher income residents versus lower income residents. This latter point would need additional research on the length of car commute times in order to determine if car ownership improves commute times for residents in more remote Baltimore communities. 
 ## Step-by-Step Instructions
-Step-by-step instructions for my data analysis can be accessed here 
+Step-by-step instructions for my data analysis [can be accessed here](https://github.com/John-Frye/employment_and_income_access_in_Baltimore/blob/main/Mini_Project_3_Step_by_Step.xlsx). 
