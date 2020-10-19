@@ -37,7 +37,8 @@ Each of Baltimore's neighborhoods can be categorized in the following data clust
 - Cluster 3: this cluster has neighbors with high income, high employment rates, low job density, and a high fraction of short commutes. It represents around 19% percent of all Baltimore neighborhoods.
 - Cluster 4: this cluster is characterized by high income, high employment rates, high job density, and a high fraction of short commutes. It represents around 2% percent of all Baltimore neighborhoods.
 ### Visual Analysis of Clustering
-The following series of graphs illustrates 
+The following series of graphs illustrates how different neighborhoods are clustered based on the variables: 
+
 ![alt_text](https://github.com/John-Frye/employment_and_income_access_in_Baltimore/blob/main/Cluster_Chart.png)
 
 Neighborhoods from clusters 1 and 2 tend to fall below the mean for household income and job density, although there are several cluster 1 neighborhoods that feature a higher-than-average job density. Cluster 3 neighborhoods also tend to exhibit a low job density, though their average household incomes are higher than neighborhoods from other cluster types. 
