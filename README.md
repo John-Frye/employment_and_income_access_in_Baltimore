@@ -12,15 +12,26 @@ All of my data came from the Opportunity Atlas. The data is categorized as follo
 ## Data Analytics
 I organized the Opportunity Atlas' data on the aforementioned variables using VLOOKUP. I then calculated the mean and standard deviation for the data on the variables. The mean is the average of the data for each variable, while the standard deviation is the measurement of deviation in the dataset relative to the mean. 
 
+![alt_text](https://github.com/John-Frye/employment_and_income_access_in_Baltimore/blob/main/mean_and_stdev.png)
+
 I used the mean and standard deviation to calculate the z-scores for each variable. The z-score is the value of the variable in one neighborhood minus the average of all of that variables' values in other neighborhoods, divided by the standard deviation. This tells us how many standard deviations away from the mean a given value is. The z-score helps us normalize--or standardize--our data, which is important because the variables are expressed using different values, like dollars and percents. A positive z-score indicates that a value is higher than the variable's average, while a negative z-score indicates that the value is lower than average. 
+
+https://github.com/John-Frye/employment_and_income_access_in_Baltimore/blob/main/mean_and_stdev.png
 
 Next, I selected four "anchor points" for the data. An anchor point is essentially a point of refence from which we can calculate how far away other data points are. Based on the datapoints' proximity to one anchor over another, we can determine if there is a data cluster. For example, neighborhoods with data points that share similar values for income, employment, job density, and commute time could be classified as one data cluster. 
 
+![alt_text](https://github.com/John-Frye/employment_and_income_access_in_Baltimore/blob/main/anchors.png)
+
 I calculated the squared distance between the selected anchors and the variables for each neighborhood. For each neighborhood, I then calculated the minimum distance squared of the variables to those of the anchor point. This helped me determine which anchor point the neighborhood in question was closest too in terms of the similarity of its data points. 
+
+![alt_text](https://github.com/John-Frye/employment_and_income_access_in_Baltimore/blob/main/distance_squared.png)
 
 Lastly, I added the minimum distances squared, which gives us a value that we can use to most accurately judge what our data clusters are. With this value, I used the Solver function to compute the final anchor points I would be using to determine different clusters. 
 ### Clusters
-Each of Baltimore's neighborhoods can be categorized in the following data clusters:
+Each of Baltimore's neighborhoods can be categorized in the following data clusters based on the following anchor points:
+
+![alt_text](https://github.com/John-Frye/employment_and_income_access_in_Baltimore/blob/main/clusters_and_anchors.png)
+
 - Cluster 1: this cluster contains neighborhoods characterized by low average household income, low rates of employment, low job density, and a high fraction of short commutes. As noted in the chart above, the z score of this cluster's income, employment, and job density was negative, while its fraction of short work commutes was positive. Hence, its income, employment, and job density was lower than the mean, while its work commute times were higher than the mean. This cluster represents about 31% of all Baltimore neighborhoods included in this project.
 - Cluster 2: this cluster features neighborhoods with low income, high employment rates, low job density, and a low fraction of short work commutes. It represents around 48% of all Baltimore neighborhoods included in this project. 
 - Cluster 3: this cluster has neighbors with high income, high employment rates, low job density, and a high fraction of short commutes. It represents around 19% percent of all Baltimore neighborhoods.
@@ -52,10 +63,10 @@ Baltimore's lowest income neighborhoods tended to fall within clusters 1 and 2. 
 
 Notably, a number of hypothetical clusters are absent. There are no clusters in Baltimore with low income, employment rates, job density, and long commute times. There are also no clusters with high income and employment, but low job density and long commutes. The first absent cluster can be attributed to Baltimore's urbanity, as low values for all four variables [are associated with poor rural areas](https://www.ers.usda.gov/topics/rural-economy-population/employment-education/rural-employment-and-unemployment). The latter cluster's absence can be attributed to a trend [described by Bloomberg CityLab](https://www.bloomberg.com/news/articles/2019-09-03/when-bad-commutes-make-bad-transportation-policy), wherein prolonged urban sprawl tends to attract jobs to once-suburban areas, reducing commute time. 
 
-## Policy Recommendation
-Policy makers should increase investment in neighborhoods that fall within clusters 1 and 2 with the goal of increasing job density. For example, small business subsidies and funding for start-up accelarators could be targeted at these neighborhoods. These initiatives could increases the number of businesses in these areas, which would, in turn, increase employment rates. Higher employment rates could possibly increase household incomes in cluster 1 neighborhoods, which already have the advantage of fast commute times. Though cluster 2 neighborhoods already feature high employment rates, the access to nearby jobs could decrease commute times for residents who, unlike cluster 3 residents, tend to not have the pre-existing incomes to afford cars. However, more research needs to be done on whether or not long commute times present a wage penalty to lower income workers. 
+### Policy Recommendation
+Policy makers should increase investment in neighborhoods that fall within clusters 1 and 2 with the goal of increasing job density. For example, small business subsidies and funding for start-up accelarators could be targeted at these neighborhoods. These initiatives could increases the number of businesses in these areas, which would, in turn, increase employment rates. Higher employment rates could possibly increase household incomes in cluster 1 neighborhoods, which already have the advantage of fast commute times. Though cluster 2 neighborhoods already feature high employment rates, the access to nearby jobs could decrease commute times for residents who, unlike cluster 3 residents, tend to not have the pre-existing incomes to afford cars.  
 
-## Additional Data
-As noted above, there needs to be more research done on whether or not long commute times have a  negative impact on lower income workers versus higher income workers. For example, I would like to see if workers who rely on public transportation for longer distances face wage penalties due to increased absence, tardiness, higher turnover, or lower work productivity. I would also like to research car ownership among Baltimore's higher income residents versus lower income residents. This latter point would need additional research on the length of car commute times in order to determine if car ownership improves commute times for residents in more remote Baltimore communities. 
+However, there needs to be more research done on whether or not long commute times have a  negative impact on lower income workers versus higher income workers. For example, I would like to see if workers who rely on public transportation for longer distances face wage penalties due to increased absence, tardiness, higher turnover, or lower work productivity. I would also like to research car ownership among Baltimore's higher income residents versus lower income residents. This latter point would need additional research on the length of car commute times in order to determine if car ownership improves commute times for residents in more remote Baltimore communities. 
+
 ## Step-by-Step Instructions
 Step-by-step instructions for my data analysis [can be accessed here](https://github.com/John-Frye/employment_and_income_access_in_Baltimore/blob/main/Mini_Project_3_Step_by_Step.xlsx). 
