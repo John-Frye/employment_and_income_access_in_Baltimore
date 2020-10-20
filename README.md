@@ -5,7 +5,7 @@ One of the central questions that city planners grapple with is how to ensure th
 What strategies can city-planners employ to promote economic vitality in Baltimore's low-income communities?
 ## Data Sources and Definitions
 All of my data came from the Opportunity Atlas. The data is categorized as follows: 
-- [Average Household Income](https://github.com/John-Frye/employment_and_income_access_in_Baltimore/blob/main/income_data.xlsx):the average household income in a population tract.
+- [Average Household Income](https://github.com/John-Frye/employment_and_income_access_in_Baltimore/blob/main/income_data.xlsx): the average household income in a population tract.
 - [Employment Rate](https://github.com/John-Frye/employment_and_income_access_in_Baltimore/blob/main/employment_data.xlsx): the fraction of individuals in a population tract that have a positive source of income. 
 - [Job Density](https://github.com/John-Frye/employment_and_income_access_in_Baltimore/blob/main/job_density.xlsx): the number of jobs per square mile in a population tract.
 - [Fraction of Short Work Commutes](https://github.com/John-Frye/employment_and_income_access_in_Baltimore/blob/main/commuter_data.xlsx): the fraction of individuals in a population tract that can commute in less than 15 minutes to work. 
@@ -16,7 +16,7 @@ I organized the Opportunity Atlas' data on the aforementioned variables using VL
 
 I used the mean and standard deviation to calculate the z-scores for each variable. The z-score is the value of the variable in one neighborhood minus the average of all of that variables' values in other neighborhoods, divided by the standard deviation. This tells us how many standard deviations away from the mean a given value is. The z-score helps us normalize--or standardize--our data, which is important because the variables are expressed using different values, like dollars and percents. A positive z-score indicates that a value is higher than the variable's average, while a negative z-score indicates that the value is lower than average. 
 
-https://github.com/John-Frye/employment_and_income_access_in_Baltimore/blob/main/mean_and_stdev.png
+![alt_text](https://github.com/John-Frye/employment_and_income_access_in_Baltimore/blob/main/mean_and_stdev.png)
 
 Next, I selected four "anchor points" for the data. An anchor point is essentially a point of refence from which we can calculate how far away other data points are. Based on the datapoints' proximity to one anchor over another, we can determine if there is a data cluster. For example, neighborhoods with data points that share similar values for income, employment, job density, and commute time could be classified as one data cluster. 
 
